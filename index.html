@@ -40,31 +40,47 @@
   </nav>
 
   <!-- HERO -->
-  <header id="home" class="hero section">
-    <div class="container d-lg-flex align-items-center">
-      <div class="hero-left">
+<header id="home" class="hero section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT SIDE: Photo + Titles -->
+      <div class="col-lg-5 text-center text-lg-start hero-left">
         <img src="images/kitua.png" alt="Agnes Kitua" class="hero-avatar" />
-        <div class="hero-badges">
-          <span class="badge">AI / ML Engineer</span>
+
+        <div class="hero-badges mt-3">
+          <span class="badge">Software Quality Engineer/Analyst</span>
           <span class="badge">Backend Developer</span>
           <span class="badge">Data Science Enthusiast</span>
         </div>
       </div>
 
-      <div class="hero-right">
-        <h1 class="hero-title">Agnes <span class="accent">Kitua</span></h1>
-        <p class="hero-sub">I am Agnes Kitua, a web developer and machine learning engineer passionate about creating innovative and impactful solutions. My expertise spans building responsive websites, developing intelligent systems, and applying AI to solve real-world problems. I enjoy combining creativity with technology to deliver solutions that make a difference.</p>
+      <!-- RIGHT SIDE: Name + Description + Buttons -->
+      <div class="col-lg-7 hero-right">
+        <h1 class="hero-title">
+          Agnes <span class="accent">Kitua</span>
+         
+        </h1>
+
+        <p class="hero-sub">
+          A passionate Quality Assurance Engineer and Software Developer driven by a
+          mission to build reliable,high performing systems that solve real world problems and enhance
+          everyday life. Committed to ensuring software quality through rigorous testing and continuous
+          improvement. A collaborative team player and emerging leader who values communication,
+          innovation, and growth in the evolving tech landscape.
+        </p>
 
         <div class="hero-ctas">
           <a class="btn btn-primary" href="#projects">See Projects</a>
-          <a class="btn btn-outline" href="https://github.com/Kitua45" target="_blank">View GitHub</a>
+          <a class="btn btn-outline" href="https://github.com/Kitua45" target="_blank">
+            View GitHub
+          </a>
         </div>
-
-        
-
       </div>
+
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- ABOUT -->
   <section class="section about container">
@@ -75,7 +91,7 @@
     <!-- CALL TO ACTION -->
 <section class="section container text-center">
   <h2>Let’s Build Something Together </h2>
-  <p>If you’re looking for a freelancer who can deliver <strong>ML solutions, responsive websites, or scalable backend systems</strong>, I’d love to help.</p>
+  <p>If you’re looking for a freelancer who can deliver <strong> responsive websites, scalable backend systems or engineer the quality of your systems</strong>, I’d love to help.</p>
   <a href="mailto:agmwikali45@gmail.com" class="btn btn-primary">Hire Me</a>
   <a href="https://www.linkedin.com/in/agnes-mwikali-17657a2b4/" target="_blank" class="btn btn-outline">Let’s Connect</a>
 </section>
@@ -85,13 +101,15 @@
   <section class="section container">
     <h2>Skills</h2>
     <div class="skill-grid">
-      <div class="skill">Python</div>
-      <div class="skill">PyTorch & TensorFlow</div>
+      <div class="skill">Typescript</div>
+      <div class="skill">SQL</div>
       <div class="skill">Javascript</div>
       <div class="skill">HTML & CSS</div>
-      <div class="skill">Flask</div>
-      <div class="skill">SQL </div>
-      
+      <div class="skill">Express</div>
+      <div class="skill">React</div>
+      <div class="skill">NodeJs</div>
+      <div class="skill">Cypress</div>
+      <div class="skill">Jest & Supertest</div>      
       
     </div>
   </section>
@@ -110,73 +128,84 @@
 
     <div class="col-md-6 col-lg-4">
       <div class="timeline-item">
-        <h5>Custom Machine Learning Solutions</h5>
-        <p>From NLP (chatbots, sentiment analysis, text classifiers) to Computer Vision (object detection, image classification). I design, train, and deploy models tailored to your business.</p>
+        <h5>Quality Assurance & Quality Engineering</h5>
+        <p>I help deliver quality software by performing unit, integration and performance testing on the backend using jest, supertest and also postman for the endpoints. Cypress and playwright to do E2E testing on the functionality of a system.</p>
       </div>
     </div>
 
     <div class="col-md-6 col-lg-4">
       <div class="timeline-item">
         <h5>Backend Development</h5>
-        <p>Scalable REST APIs built with Django/Flask/FastAPI. Includes database design, authentication, and deployment for production-grade systems.</p>
+        <p>Scalable REST APIs built with NodeJs and Express. Includes database design, authentication, and deployment for production-grade systems.</p>
       </div>
     </div>
 
-    <div class="col-md-6 col-lg-4">
-      <div class="timeline-item">
-        <h5>Data Analysis & Visualization</h5>
-        <p>Data cleaning, pipelines, and dashboards (SQL, Python, Power BI). Turn raw data into clear, actionable insights for decision making.</p>
-      </div>
+   
+
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section container">
+  <h2>Projects</h2>
+
+  <div class="row g-4">
+
+    <!-- Panda Smart -->
+    <div class="col-12 col-md-6 col-lg-6">
+      <article class="project-card glass h-100">
+        <div class="project-thumb">
+          <img src="images/project.png" alt="Crop Recommendation system" loading="lazy" />
+        </div>
+
+        <div class="project-body">
+          <h5>Panda smart — A crop recommendation systemn</h5>
+          <h6>Role: MLOps Engineer, Front end Developer</h6>
+          <p>
+            Naive Bayes for soil and enviromental analysis.
+            Deployed with a FLASK API for access and farmer usability.
+          </p>
+          <p class="tech">PyTorch • pandas • FLASK API • scikit-learn</p>
+
+          <div class="project-links">
+            <a class="link-ghost" href="https://github.com/Kitua45/PANDA-SMART" target="_blank">
+              View Repo
+            </a>
+          </div>
+        </div>
+      </article>
     </div>
 
-    <div class="col-md-6 col-lg-4">
-      <div class="timeline-item">
-        <h5>Automation & Web Scraping</h5>
-        <p>Automating workflows, scraping data from multiple sources (Selenium, BeautifulSoup), and building integrations with external APIs.</p>
-      </div>
+    <!-- Bug Tracking System -->
+    <div class="col-12 col-md-6 col-lg-6">
+      <article class="project-card glass h-100">
+        <div class="project-thumb">
+          <img src="images/bug.png" alt="bug tracking system" loading="lazy" />
+        </div>
+
+        <div class="project-body">
+          <h5>Bug Tracker — Making collaboration and deugging easier for developers</h5>
+          <h6>Role: Full stack Developer</h6>
+
+          <p class="tech">SQL • Express • React • NodeJs</p>
+
+          <div class="project-links">
+            <a class="link-ghost"
+               href="https://github.com/Kitua45/FULLSTACK-BUG-TRACKING-SYSTEM"
+               target="_blank">
+              View Repo
+            </a>
+          </div>
+        </div>
+      </article>
     </div>
 
   </div>
 </section>
 
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section container">
-    <h2>Projects</h2>
 
-    <div class="row g-4">
-      <!-- Panda smart -->
-      <div class="col-md-6 col-lg-4">
-        <article class="project-card glass">
-          <div class="project-thumb">
-            <img src="images/project.png" alt="Crop Recommendation system" loading="lazy" />
-          </div>
-          <div class="project-body">
-            <h5>Panda smart — A crop recommendation systemn</h5>
-            <h6> Role: MLOps Engineer, Front end Developer</h6>
-            <p>Naive Bayes for soil and enviromental analysis. Deployed with a FLASK API for access and farmer usability.</p>
-            <p class="tech">PyTorch • pandas • FLASK API • scikit-learn</p>
-            <div class="project-links">
-              <a class="link-ghost" href="https://github.com/Kitua45/PANDA-SMART" target="_blank">View Repo</a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-    
-
-    </div>
-  </section>
-
-  <!-- CURRENT WORK -->
-  <section class="section container">
-    <h2>Currently Working On</h2>
-    <ul class="current-list">
-      <li><strong>Transformers & LLMs:</strong> Fine-tuning Hugging Face models for Swahili text classification and Q&A.</li>
-      <li><strong>Generative AI:</strong> Prompt engineering for domain-specific models and exploring lightweight LLMs.</li>
-      <li><strong>QA/QE Trainee at Teach2give:</strong> I am currently in QA/QE training, focusing on building expertise in software testing and quality assurance practices. I am gaining technical skills in test automation, API testing, defect tracking, and using modern testing frameworks and tools. This training is also enhancing my ability to design efficient test strategies, ensure product reliability, and support continuous integration and delivery processes.</li>
-    </ul>
-  </section>
 
   <!-- EXPERIENCE -->
   <section id="work" class="section container">
@@ -184,13 +213,13 @@
     <div class="timeline">
       <div class="timeline-item">
         <h5>QA/QE Traineee — Teach2give</h5>
-        <p class="muted">2025 — Present</p>
-        <p>I am currently undergoing QA/QE training, where I am learning how to ensure the quality and reliability of software systems. My skills include test planning, automation, debugging, and applying industry best practices to identify and resolve issues efficiently. This training is strengthening my attention to detail, problem-solving abilities, and understanding of the full software development lifecycle.</p>
+        <p class="muted">2025 sep — Dec</p>
+        <p>Underwent QA/QE training, where I learnt how to ensure the quality and reliability of software systems. My skills include test planning, automation, debugging, and applying industry best practices to identify and resolve issues efficiently. This training is strengthening my attention to detail, problem-solving abilities, and understanding of the full software development lifecycle.</p>
       </div>
 
       <div class="timeline-item">
         <h5>Equity Leaders chapter chairperson — Karatina University ELC</h5>
-        <p class="muted">2024 — 2025</p>
+        <p class="muted">2023 — 2025</p>
         <p>As the Equity Leaders Chairperson, I was responsible for guiding and coordinating the activities of the scholars’ network. My role involved organizing mentorship programs, leading community outreach initiatives, and fostering collaboration among members. I also represented the group in key forums, provided leadership in planning projects, and created opportunities for personal and professional growth within the network.</p>
       </div>
 
@@ -219,7 +248,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container text-center">
-      <small>© Agnes Kitua 2025— Built with care • Designed for AI & ML</small>
+      <small>© Agnes Kitua 2026— Built with care • Prioritizing Quality over Quantity</small>
     </div>
   </footer>
 
